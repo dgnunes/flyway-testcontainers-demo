@@ -6,8 +6,4 @@ spring:
     driverClassName: "org.testcontainers.jdbc.ContainerDatabaseDriver"
 
     flyway:
-      cleanDisabled: false
       locations: "db/migration"
-
-flyway:
-  cleanDisabled: false
