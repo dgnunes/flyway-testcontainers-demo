@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: "explipro-testcontainers-demo"
+
+  datasource:
+    url: "jdbc:postgresql://localhost/postgres"
+    username: "user"
+    password: "password"
+
+  flyway:
+    locations: "db/migration"
+    cleanDisabled: false

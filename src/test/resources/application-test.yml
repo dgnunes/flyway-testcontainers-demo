@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: "jdbc:tc:postgresql:15.2:///test_database"
+    user: "user"
+    password: "password"
+    driverClassName: "org.testcontainers.jdbc.ContainerDatabaseDriver"
+
+    flyway:
+      cleanDisabled: false
+      locations: "db/migration"
+
+flyway:
+  cleanDisabled: false

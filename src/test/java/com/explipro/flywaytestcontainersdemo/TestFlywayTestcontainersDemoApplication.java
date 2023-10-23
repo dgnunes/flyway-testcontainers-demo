@@ -1,0 +1,13 @@
+package com.explipro.flywaytestcontainersdemo;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.test.context.TestConfiguration;
+
+@TestConfiguration(proxyBeanMethods = false)
+public class TestFlywayTestcontainersDemoApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.from(FlywayTestcontainersDemoApplication::main).with(TestFlywayTestcontainersDemoApplication.class).run(args);
+	}
+
+}
